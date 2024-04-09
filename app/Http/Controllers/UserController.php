@@ -43,12 +43,6 @@ class UserController extends Controller
 
     }
 
-    public function show(user $user)
-    {
-        return view(view: 'user_show', data: ['user' => $user]);
-    }
-
-
     public function edit(User $user)
     {
         return view('user_edit', ['user' => $user]);

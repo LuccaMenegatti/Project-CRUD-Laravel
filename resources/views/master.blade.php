@@ -11,7 +11,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <title>Crud com Laravel</title>
 </head>
-<body>
+<body style="background-color:  #f2f2f2">
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F13B2F; margin-bottom: 20px;">
+    <a class="navbar-brand" href="{{route('users.index')}}" style="padding-left: 20px; color: white; font-weight: bold;">
+      Crud com laravel
+    </a>
+  </nav>
 
   <div class="container">
     @yield('content')
