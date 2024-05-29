@@ -21,6 +21,12 @@ class ProductController extends Controller
         return view('products', ['products' => $products]);
     }
 
+    public function graphic()
+    {
+        $products = $this->product->all();
+        return view('graphic', ['products' => $products]);
+    }
+
     public function create()
     {
         return view(view: 'product_create');
